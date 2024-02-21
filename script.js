@@ -20,18 +20,14 @@ function getCountry(country) {
   <div class="country__data">
     <h3 class="country__name">${data.name.common}</h3>
     <h4 class="country__region">${data.region}</h4>
-    <p class="country__row"><span>👨‍👩‍👧‍👦</span>${(
-      +data.population / 1000000
-    ).toFixed(1)} mln </p>
+    <p class="country__row"><span>👨‍👩‍👧‍👦</span>${(+data.population / 1000000).toFixed(1)} mln </p>
     <p class="country__row"><span>🗣️</span>${Object.values(data.languages)}</p>
-    <p class="country__row"><span>💰</span>${
-      data.currencies[Object.keys(data.currencies)].name
-    }
+    <p class="country__row"><span>💰</span>${data.currencies[Object.keys(data.currencies)].name}
       ${data.currencies[Object.keys(data.currencies)].symbol}
     </p>
   </div>
   </article>`;
-
+    countriesContainer.insertAdjacentHTML('beforeend', '');
     countriesContainer.insertAdjacentHTML('beforeend', html);
     countriesContainer.style.opacity = 1;
   });
