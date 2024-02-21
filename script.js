@@ -26,7 +26,8 @@ function getCountry(country) {
       ${data.currencies[Object.keys(data.currencies)].symbol}
     </p>
   </div>
-  </article>`;    
+  </article>`;
+
     countriesContainer.insertAdjacentHTML('beforeend', html);
     countriesContainer.style.opacity = 1;
   });
