@@ -27,7 +27,7 @@ function getCountry(country) {
     </p>
   </div>
   </article>`;
-
+    countriesContainer.innerHTML = '';
     countriesContainer.insertAdjacentHTML('beforeend', html);
     countriesContainer.style.opacity = 1;
   });
