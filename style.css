@@ -28,7 +28,8 @@ body {
 
 .countries {
   display: flex;
-
+  flex-direction: column;
+  gap: 10px;
   font-size: 1.8rem;
   opacity: 0;
   transition: opacity 1s;
